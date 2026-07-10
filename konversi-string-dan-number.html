@@ -21,6 +21,20 @@
         const b = 1;
         const total = a.toString() + b.toString();
         document.writeln(`<p>${total}</p>`);
+
+        document.writeln(`<p>${parseInt("salah")}</p>`);
+        document.writeln(`<p>${parseInt("1salah")}</p>`);
+        document.writeln(`<p>${parseFloat("1.1text")}</p>`);
+
+        document.writeln(`<p>${Number("1.1ups")}</p>`);
+        document.writeln(`<p>${Number("1x")}</p>`);
+        document.writeln(`<p>${Number("bukan number")}</p>`);
+
+        const first = Number("salah");
+        const second = 100;
+        const totalNumber = first + second;
+
+        document.writeln(`<p>${totalNumber}</p>`);
     </script>
 </body>
 </html>
