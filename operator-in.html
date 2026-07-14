@@ -17,6 +17,22 @@
         }else{
             console.info("Hello");
         }
+
+        const student = {
+            firstName: "Eko",
+            middleName: undefined,
+            lastName: "Khannedy"
+        };
+
+        if("middleName" in student){
+            console.info(`Hello ${student.middleName}`);
+        }else{
+            console.info("Hello Student");
+        }
+
+        const names = [null, "Kurniawan", null];
+        const result = 0 in names;
+        document.writeln(`<p>${result}</p>`);
     </script>
 </body>
 </html>
