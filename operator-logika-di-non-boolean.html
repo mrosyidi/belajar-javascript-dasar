@@ -13,6 +13,15 @@
         console.info(0 || "NOL");
         console.info(null || "NULL");
         console.info(undefined || "UNDEFINED");
+
+        const person = {
+            firstName: "Eko",
+            lastName: "Khannedy"
+        };
+
+        const name = person.firstName || person.lastName;
+
+        console.info(name);
     </script>
 </body>
 </html>
