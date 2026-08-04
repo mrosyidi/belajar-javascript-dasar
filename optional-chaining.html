@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-        const person = {};
+        const person = {
+            address: {
+                country: "Indonesia"
+            }
+        };
 
-        let country;
-
-        if(person.address !== undefined && person.address !== null){
-            country = person.address.country;
-        }
+        let country = person?.address?.country;
 
         document.writeln("SUKSES");
 
