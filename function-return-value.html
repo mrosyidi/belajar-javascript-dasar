@@ -31,6 +31,23 @@
 
         const finalValue = getFinalValue(95);
         document.writeln(`<p>${finalValue}`);
+
+        function isContains(array, searchValue){
+            for(const element of array){
+                console.info(`Iterasi Element ${element}`);
+                if(element === searchValue){
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        const array = [1, 32, 44, 89, 12, 78, 63, 40, 67];
+        const search = 32;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}</p>`);
+
     </script>
 </body>
 </html>
