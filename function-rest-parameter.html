@@ -25,6 +25,17 @@
 
         sum("Test", ...values);
 
+        function oldSum(){
+            let total = 0;
+
+            for(const argument of arguments){
+                total += argument;
+            }
+
+            document.writeln(`<p>Total is ${total}</p>`);
+        }
+
+        oldSum(1, 2, 3, 4, 5);
 
     </script>
 </body>
